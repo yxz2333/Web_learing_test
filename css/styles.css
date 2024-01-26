@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: PFHTT_font;
+    src: url("../font/PFanHuTuTi.otf");
+}
+
+@font-face {
+    font-family: Quantum_font;
+    src: url("../font/Quantum.otf");
+}
+
+
+.喜报 p {
+    display: inline;
+    /* 元素设置为内联元素，它将不再占据一整行 */
+
+    color: red;
+    font-size: 100px;
+    border: 15px ridge red;
+    padding: 25px 50px 25px;
+}
+
+.喜报 {
+    margin: 100px;
+}
+
+main h2 {
+    font-size: 28px;
+}
+
+tbody {
+    font-size: large;
+}
+
+/* 好像要精准对上要改的字的元素才能改颜色（反正写h4不行） */
+main a:hover {
+    color: red;
+    font-size: xx-large;
+}
+
+/* 这里的a也要精准对上才行 */
+.表 a[href*="parquet"] {
+    /* 属性选择器 */
+    /* .表(类选择器)链接位置 a链接元素 href链接属性 href属性出现了parquet则执行 */
+    color: rgb(188, 5, 244);
+}
+
+.表 a:hover {
+    /* 伪类（好像有蛮多指令可以用） */
+    /* hover定义光标放上去文字如何改变 */
+    color: rgb(247, 170, 4);
+    font-size: larger;
+}
+
+.戳这有好康的 {
+    margin: 30px 0 0;
+}
+
+.戳这有好康的 a {
+    color: black;
+    font-size: x-small;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px ridge black;
+    border-radius: 3px;
+}
+
+.戳这有好康的 a:hover {
+    color: red;
+    font-size: larger;
+}
+
+
+.返回至main {
+    margin: 30px 0 0;
+}
+
+.返回至main a:hover {
+    color: red;
+}
+
+.返回至main a {
+    color: rgb(255, 255, 255);
+    background-color: black;
+
+    /* 边框效果和圆口设计 */
+    border: 4px outset black;
+    border-radius: 12px;
+
+    /* 上右下左原则 */
+    padding: 7px 10px;
+}
+
+
+
+/* ------------ 以下为通用类的定义 ------------ */
+
+
+.文本居中 {
+    text-align: center;
+}
+
+.文本居末 {
+    text-align: end;
+}
+
+.粗体 {
+    font-weight: bold;
+}
+
+.左浮动 {
+    float: left;
+}
+
+.右浮动 {
+    float: right;
+}
+
+.缩小图片 {
+    width: 33.33333333%;
+    height: auto;
+}
+
+[class*="解除浮动"] {
+    clear: both;
+}
+
+.PFHTT_font {
+    font-family: "PFHTT_font";
+}
+
+.Quantum_font {
+    font-family: "Quantum_font";
+}

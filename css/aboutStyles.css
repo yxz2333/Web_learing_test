@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: MY_font;
+    src: url("../font/MaiYuan.ttf");
+}
+
+@font-face {
+    font-family: Quantum_font;
+    src: url("../font/Quantum.otf");
+}
+
+
+/* 响应式web设计到时候系统学，不知道为啥没效果 */
+
+body h1 {
+    font-size: 40px;
+}
+
+.骂人列表 {
+    font-size: large;
+    color: rgb(255, 0, 0);
+}
+
+/* active：点了就有反应 */
+.返回按钮 a:active {
+    color: rgb(19, 3, 247);
+}
+
+.返回按钮 a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 3, 247);
+
+    /* 边框效果和圆口设计 */
+    border: 4px outset rgb(19, 3, 247);
+    border-radius: 12px;
+
+    /* 上右下左原则 */
+    padding: 7px 10px;
+    margin: 10px 0px 3px 0px;
+}
+
+main {
+    margin: 0px 140px 0px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------ 以下为通用类的定义 ------------ */
+
+.文本居中 {
+    text-align: center;
+}
+
+.文本居末 {
+    text-align: end;
+}
+
+.粗体 {
+    font-weight: bold;
+}
+
+.左浮动 {
+    float: left;
+}
+
+[class*="解除float"] {
+    clear: both;
+}
+
+.MY_font {
+    font-family: "MY_font";
+}
+
+.Quantum_font {
+    font-family: "Quantum_font";
+}
